@@ -1,16 +1,4 @@
 
-// const navbar = document.querySelector('.container');
-
-// window.addEventListener('scroll', () => {
-//   if (window.scrollY > 0) {
-//     navbar.style.backgroundColor = 'white';
-//     navbar.style.color = 'black';
-//   } else {
-//     navbar.style.backgroundColor = 'transparent';
-//     navbar.getElementsByTagName('a').style.color = 'black';
-//   }
-// });
-
 const myImage1 = document.getElementById('buildingImage');
 const myImage2 = document.getElementById('yellowImage');
 const myImage3 = document.getElementById('shadowImage');
@@ -37,15 +25,15 @@ function createCard([img]){
 }
 let card1 = [img="https://cdn-eahjn.nitrocdn.com/ChEvwayTHZmZJUAdsUNMLXuXZdBprFoQ/assets/images/optimized/rev-3bf3184/app/uploads/2022/10/Amazon.svg"]
 createCard(card1);
-let card2 = [img = "https://cdn-eahjn.nitrocdn.com/ChEvwayTHZmZJUAdsUNMLXuXZdBprFoQ/assets/images/optimized/rev-3bf3184/app/uploads/2022/10/Beats.svg"]
+let card2 = [img = "Beats.svg"]
 createCard(card2);
 let card3 = [img="https://cdn-eahjn.nitrocdn.com/ChEvwayTHZmZJUAdsUNMLXuXZdBprFoQ/assets/images/optimized/rev-3bf3184/app/uploads/2022/10/Property-1GE.png"]
 createCard(card3);
-let card4 = [img = "https://cdn-eahjn.nitrocdn.com/ChEvwayTHZmZJUAdsUNMLXuXZdBprFoQ/assets/images/optimized/rev-3bf3184/app/uploads/2022/11/NBC.svg"]
+let card4 = [img = "NBC.svg"]
 createCard(card4);
-let card5 = [img="https://cdn-eahjn.nitrocdn.com/ChEvwayTHZmZJUAdsUNMLXuXZdBprFoQ/assets/images/optimized/rev-3bf3184/app/uploads/2022/11/CBS.svg"]
+let card5 = [img="CBS.svg"]
 createCard(card5);
-let card6 = [img = "https://cdn-eahjn.nitrocdn.com/ChEvwayTHZmZJUAdsUNMLXuXZdBprFoQ/assets/images/optimized/rev-3bf3184/app/uploads/2022/11/LACounty.svg"]
+let card6 = [img = "LACounty.svg"]
 createCard(card6);
 let card7 = [img="data:image/svg+xml;nitro-empty-id=NTMzOjE1OQ==-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjAwIDE0MCIgd2lkdGg9IjIwMCIgaGVpZ2h0PSIxNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+"]
 createCard(card7);
@@ -70,13 +58,13 @@ let Secondcard1 = [img="https://cdn-eahjn.nitrocdn.com/ChEvwayTHZmZJUAdsUNMLXuXZ
 createCard1(Secondcard1);
 let Secondcard2 = [img="https://cdn-eahjn.nitrocdn.com/ChEvwayTHZmZJUAdsUNMLXuXZdBprFoQ/assets/images/optimized/rev-3bf3184/app/uploads/2022/11/PhysiciansFormula-1.svg"]
 createCard1(Secondcard2);
-let Secondcard3 = [img="https://cdn-eahjn.nitrocdn.com/ChEvwayTHZmZJUAdsUNMLXuXZdBprFoQ/assets/images/optimized/rev-3bf3184/app/uploads/2022/11/RedBarn.svg"]
+let Secondcard3 = [img="RedBarn.svg"]
 createCard1(Secondcard3);
-let Secondcard4 = [img="https://cdn-eahjn.nitrocdn.com/ChEvwayTHZmZJUAdsUNMLXuXZdBprFoQ/assets/images/source/rev-2134071/app/uploads/2022/11/Aerovironment2.svg"]
+let Secondcard4 = [img="Aerovironment2.svg"]
 createCard1(Secondcard4);
 let Secondcard5 = [img="https://cdn-eahjn.nitrocdn.com/ChEvwayTHZmZJUAdsUNMLXuXZdBprFoQ/assets/images/source/rev-2134071/app/uploads/2022/11/Lipsmacker2.svg"]
 createCard1(Secondcard5);
-let Secondcard6 = [img="https://cdn-eahjn.nitrocdn.com/ChEvwayTHZmZJUAdsUNMLXuXZdBprFoQ/assets/images/source/rev-2134071/app/uploads/2022/11/TCE.svg"]
+let Secondcard6 = [img="TCE.svg"]
 createCard1(Secondcard6);
 let Secondcard7 = [img="data:image/svg+xml;nitro-empty-id=Njc5OjE2Mw==-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjAwIDE0MCIgd2lkdGg9IjIwMCIgaGVpZ2h0PSIxNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+"]
 createCard1(Secondcard7);
@@ -191,7 +179,7 @@ createCard2(Thirdcard4);
 ]
   
 createCard2(Thirdcard5);
-  let Thirdcard6 = [img="https://cdn-eahjn.nitrocdn.com/ChEvwayTHZmZJUAdsUNMLXuXZdBprFoQ/assets/images/source/rev-2134071/app/uploads/2023/01/Property-1Sitefinity-2.svg", text="Progress Sitefinity"
+  let Thirdcard6 = [img="Property-1Sitefinity-2.svg", text="Progress Sitefinity"
 ]
   
 createCard2(Thirdcard6);
@@ -239,7 +227,7 @@ createCard3(Fourthcard2);
 let Fourthcard3 = [img="https://cdn-eahjn.nitrocdn.com/ChEvwayTHZmZJUAdsUNMLXuXZdBprFoQ/assets/images/source/rev-2134071/app/uploads/2022/09/icon-kentico.svg", text="Kinetico"
 ]
 createCard3(Fourthcard3);
-let Fourthcard4 = [img="https://cdn-eahjn.nitrocdn.com/ChEvwayTHZmZJUAdsUNMLXuXZdBprFoQ/assets/images/source/rev-2134071/app/uploads/2022/09/icon-react.svg", text="React JS"
+let Fourthcard4 = [img="icon-react.svg", text="React JS"
 ]
 createCard3(Fourthcard4);
 let Fourthcard5 = [img="https://cdn-eahjn.nitrocdn.com/ChEvwayTHZmZJUAdsUNMLXuXZdBprFoQ/assets/images/source/rev-2134071/app/uploads/2022/09/icon-apple.svg", text="Apple iOS"
