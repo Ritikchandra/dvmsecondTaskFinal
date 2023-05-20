@@ -672,7 +672,7 @@ body {
     min-height: 500px;
   }
   #purpleImage {
-    background-image: url("https://cdn-eahjn.nitrocdn.com/ChEvwayTHZmZJUAdsUNMLXuXZdBprFoQ/assets/images/optimized/rev-3bf3184/app/uploads/2023/04/Willkie-Thumbnail.jpg");
+    background-image: url("bgurlPurple.webp");
     position: absolute;
     background-size: cover;
     top: 0;
@@ -748,7 +748,7 @@ body {
     position: relative;
   }
   .section5-second-second-first-first-second-first-first-first img {
-    background-image: url("https://www.spinxdigital.com/app/uploads/2022/09/TCE-Thumbnail.jpg");
+    background-image: url("bgurl2white.webp");
     border-radius: 0 0 8px 8px;
     position: absolute;
     background-size: cover;
@@ -852,8 +852,11 @@ body {
     position: relative;
     min-height: 500px;
   }
+.imgWrapper{
+  min-height: 420px;
+}
   #begaimage {
-    background-image: url("https://cdn-eahjn.nitrocdn.com/ChEvwayTHZmZJUAdsUNMLXuXZdBprFoQ/assets/images/optimized/rev-3bf3184/app/uploads/2022/09/Thumbnail.jpg");
+    background-image: url("bgurlBega.webp");
     position: absolute;
     background-size: cover;
     top: 0;
