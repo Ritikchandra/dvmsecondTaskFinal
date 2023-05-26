@@ -8,7 +8,6 @@ window.addEventListener('scroll', () => {
   const scrollY2 =-0.25*scrollY; 
   const scrollY3 = -0.3*scrollY;
   const scrollY4 = -0.25*scrollY;
-  
   myImage1.style.transform = `translateY(${scrollY2}px)`;
   myImage3.style.transform = `translateY(${scrollY3}px)`;
   myImage2.style.transform = `translateY(${scrollY4}px)`;
@@ -308,7 +307,6 @@ imageCursorDiv2.addEventListener('mouseenter', function(e){
 imageCursorDiv2.addEventListener('mouseleave', function(e){
   hoverImage2.style.opacity=0;
 })
-// const hoverImage
 
 window.addEventListener("scroll",()=>{
 let scrolllingValue = window.pageYOffset;
@@ -376,3 +374,64 @@ else{
 };
 const hamMenu = document.getElementsByClassName("hamburgerMenu")[0];
 hamMenu.addEventListener("click",openHam);
+
+function fadeAnimationFunc1(){
+let awardText = document.getElementsByClassName('section4-first-first-first')[0] 
+if (document.getElementsByClassName('section4-first-first-first')[0].getBoundingClientRect().top<400 ){
+  awardText.classList.remove('animateHidden')
+  awardText.classList.remove('translateAnimation')
+}else{
+  awardText.classList.add('animateHidden')
+  awardText.classList.add('translateAnimation')
+}
+console.log(document.getElementsByClassName('section4-first-first-first')[0].getBoundingClientRect().top);
+}
+window.addEventListener("scroll", fadeAnimationFunc1);
+function fadeAnimationFunc2(){
+let awardText = document.getElementsByClassName('section4-first-first-second')[0] 
+if (document.getElementsByClassName('section4-first-first-second')[0].getBoundingClientRect().top<400 ){
+  awardText.classList.remove('animateHidden')
+  awardText.classList.remove('translateAnimation')
+}else{
+  awardText.classList.add('animateHidden')
+  awardText.classList.add('translateAnimation')
+}
+console.log(document.getElementsByClassName('section4-first-first-second')[0].getBoundingClientRect().top);
+}
+window.addEventListener("scroll", fadeAnimationFunc2);
+function fadeAnimationFunc3(){
+let awardText = document.getElementsByClassName('section4-first-first-second')[1] 
+if (document.getElementsByClassName('section4-first-first-second')[1].getBoundingClientRect().top<400 ){
+  awardText.classList.remove('animateHidden')
+  awardText.classList.remove('translateAnimation')
+}else{
+  awardText.classList.add('animateHidden')
+  awardText.classList.add('translateAnimation')
+}
+console.log(document.getElementsByClassName('section4-first-first-second')[1].getBoundingClientRect().top);
+}
+window.addEventListener("scroll", fadeAnimationFunc3);
+function fadeAnimationFunc4(){
+let awardText = document.getElementsByClassName('section4-first-first-second')[2] 
+if (document.getElementsByClassName('section4-first-first-second')[2].getBoundingClientRect().top<400 ){
+  awardText.classList.remove('animateHidden')
+  awardText.classList.remove('translateAnimation')
+}else{
+  awardText.classList.add('animateHidden')
+  awardText.classList.add('translateAnimation')
+}
+console.log(document.getElementsByClassName('section4-first-first-second')[2].getBoundingClientRect().top);
+}
+window.addEventListener("scroll", fadeAnimationFunc4);
+function fadeAnimationFunc5(){
+let awardText = document.getElementsByClassName('section4-first-first-second')[3] 
+if (document.getElementsByClassName('section4-first-first-second')[3].getBoundingClientRect().top<400 ){
+  awardText.classList.remove('animateHidden')
+  awardText.classList.remove('translateAnimation')
+}else{
+  awardText.classList.add('animateHidden')
+  awardText.classList.add('translateAnimation')
+}
+console.log(document.getElementsByClassName('section4-first-first-second')[3].getBoundingClientRect().top);
+}
+window.addEventListener("scroll", fadeAnimationFunc5);
