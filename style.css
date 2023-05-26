@@ -5,8 +5,18 @@ body {
     line-height: 1.55;
     background-color: #16171a;
     color: #fff;
+    overflow-x: hidden;
   }
-  
+  @keyframes fade {
+    0%{
+      opacity: 0;
+      transform: translateY(30px) scale(0.9);
+    }
+    100%{
+      opacity: 1;
+      transform: translateY(0px) scale(1);
+    }
+  }
   * {
     margin: 0;
     padding: 0;
@@ -50,9 +60,9 @@ body {
     margin-right: 0;
     font-weight: 500;
     letter-spacing: 1.5px;
-    position: absolute;
+  position: absolute; 
     bottom: 35vh;
-    left: -40px;
+    left: -40px; 
   }
   .hamburgerMenu {
     display: none;
@@ -120,9 +130,10 @@ body {
   
   .marqueeLinkSpan img {
     /* margin-top: 0px; */
-    position: absolute;
+    /* position: absolute;
     top: 14px;
-    left: -5px;
+    left: -5px; */
+    vertical-align: middle;
   }
   .marqueeLink:hover {
     background-color: white;
@@ -444,16 +455,12 @@ body {
   }
   
   .section4 {
-    /* opacity: 1;
-  pointer-events: all;
-  transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -2030, 0, 1); */
     padding: 64px 0 110px;
     position: relative;
     float: left;
     width: 100%;
   }
   .section4-first {
-    /* max-width: 1368px; */
     padding-right: 24px;
     padding-left: 24px;
     margin-right: auto;
@@ -467,9 +474,11 @@ body {
     margin-left: -24px;
     justify-content: center !important;
   }
+
   .section4-first-first-first {
     transform: none;
     opacity: 1;
+    /* animation: fadeAnimation 1s; */
     transition: all 0.8s ease;
     text-align: center !important;
     padding-right: 24px;
@@ -478,6 +487,16 @@ body {
     max-width: 100%;
     flex: 0 0 auto;
   }
+  /* @keyframes fadeAnimation{
+    0%{
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    100%{
+      transform: translateY(0px);
+    }
+  } */
+
   .section4-first-first-first h3 {
     margin-bottom: 60px;
     font-size: 36px;
@@ -917,8 +936,7 @@ body {
     transition: transform .38s cubic-bezier(.165,.84,.44,1);
     transform-origin: 50% 100%;
     transform: scale(.98,0) translateZ(0);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
+
     z-index: -1;
     background-repeat: repeat-x;
     display: inline-block;
@@ -1101,7 +1119,7 @@ body {
     font-weight: 600;
     line-height: 1.19;
     letter-spacing: -0.778846px;
-    -webkit-text-fill-color: transparent;
+    /* -webkit-text-fill-color: transparent; */
     color: transparent;
     background: linear-gradient(90deg, #8a51fe, #628aff, #36cfff);
     background-clip: border-box;
@@ -1558,7 +1576,7 @@ body {
     height: 12px;
     left: -1px;
     right: -1px;
-    background: #b4e300;
+    /* background: #b4e300; */
     background-size: 100% 100%;
     transition: transform 0.38s cubic-bezier(0.165, 0.84, 0.44, 1);
     transform-origin: 50% 100%;
@@ -1580,11 +1598,10 @@ body {
     right: -1px;
     background: #d6d6db;
     background-size: 100% 100%;
-    transition: opacity 0.19s cubic-bezier(0.895, 0.03, 0.685, 0.22),
-      background 0.67s linear 417ms;
+    transition: opacity 0.19s cubic-bezier(0.895, 0.03, 0.685, 0.22);
     transform: translateZ(0);
   }
-  #platformLink:hover::before {
+  #platformLink:hover::before{
     transform: scale(1) translateZ(0);
     content: "";
     position: absolute;
@@ -1597,6 +1614,9 @@ body {
     z-index: -1;
     background-repeat: repeat-x;
     display: inline-block;
+  }
+  #platformLink:hover::after{
+    background: none;
   }
   .section9 {
     padding: 120px 0;
@@ -1934,12 +1954,14 @@ body {
     height: 1px;
     left: -1px;
     right: -1px;
-    transition: opacity 0.19s cubic-bezier(0.895, 0.03, 0.685, 0.22),
-      background 0.67s linear 417ms;
+    transition: opacity 0.19s cubic-bezier(0.895, 0.03, 0.685, 0.22);
     transform: translateZ(0);
   }
   #viewMoreInsights:hover::before {
     transform: scale(1) translateZ(0);
+  }
+  #viewMoreInsights:hover::after{
+    background: none;
   }
   #gradientImage2Section1 {
     max-width: 904px;
@@ -2387,4 +2409,9 @@ body {
   #AwardFlex{
     font-size: 54px;
   }
-  
+  .animateHidden{
+    opacity: 0;
+  }
+  .translateAnimation{
+    transform: translateY(30px);
+  }
